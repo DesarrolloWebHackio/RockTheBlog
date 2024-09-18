@@ -81,3 +81,8 @@ body[data-theme="light"] .contrast {
   background-color: var(--rtb-bg-contrast-light);
   color: var(--rtb-text-contrast-light);
 }
+
+
+#app {
+  padding: var(--rtb-spacing-m);
+}
