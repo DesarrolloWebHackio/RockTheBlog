@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* colors */
+  --rtb-color-000: #f0f0f0;
+  --rtb-color-100: #f7f0d4;
+  --rtb-color-200: #f4dad7;
+  --rtb-color-300: #b7d6f1;
+  --rtb-color-400: #e8b5ce;
+  --rtb-color-500: #7b88cc;
+  --rtb-color-600: #282828;
+
+  /* mode light */
+  --rtb-bg-light: var(--rtb-color-100);
+  --rtb-text-light: var(--rtb-color-600);
+  --rtb-bg-contrast-light: var(--rtb-color-600);
+  --rtb-text-contrast-light: var(--rtb-color-100);
+
+  /* mode dark */
+  --rtb-bg-dark: var(--rtb-color-600);
+  --rtb-text-dark: var(--rtb-color-100);
+  --rtb-bg-contrast-dark: var(--rtb-color-100);
+  --rtb-text-contrast-dark: var(--rtb-color-600);
+
+  /* spacings */
+  --rtb-spacing-xs: 5px;
+  --rtb-spacing-s: 10px;
+  --rtb-spacing-m: 15px;
+  --rtb-spacing-l: 20px;
+  --rtb-spacing-xl: 25px;
+  --rtb-spacing-xxl: 30px;
+
+  /* fonts */
+  --rtb-title-font: "Montserrat", sans-serif;
+  --rtb-subtitle-font: "Josefin Slab", serif;
+  --rtb-text-font:  "Hind Madurai", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: var(--rtb-title-font);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--rtb-subtitle-font);
+}
+
+p, label, a, input, li, textarea {
+  font-family: var(--rtb-text-font);
+}
+
+body {
+  min-height: 100svh;
+}
+
+body[data-theme="dark"] *, body[data-theme="dark"] {
+  background-color: var(--rtb-bg-dark);
+  color: var(--rtb-text-dark);
+  transition: all 0.5s;
+}
+
+body[data-theme="dark"] .contrast {
+  background-color: var(--rtb-bg-contrast-dark);
+  color: var(--rtb-text-contrast-dark);
+}
+
+body[data-theme="light"] *, body[data-theme="light"] {
+  background-color: var(--rtb-bg-light);
+  color: var(--rtb-text-light);
+  transition: all 0.5s;
+}
+
+body[data-theme="light"] .contrast {
+  background-color: var(--rtb-bg-contrast-light);
+  color: var(--rtb-text-contrast-light);
+}
