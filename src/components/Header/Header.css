@@ -1,0 +1,10 @@
+body > header ul {
+    height: 8svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body > header a {
+    font-size: 30px;
+}
