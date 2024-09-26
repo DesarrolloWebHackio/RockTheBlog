@@ -6,7 +6,7 @@ body>header a {
     align-items: center;
 }
 
-body > header ul {
+body>header ul {
     position: absolute;
     width: 100%;
     display: flex;
@@ -15,7 +15,7 @@ body > header ul {
     margin-right: 200px;
 }
 
-body > header ul > li {
+body>header ul>li {
     width: 200px;
     height: 200px;
     display: flex;
@@ -23,7 +23,7 @@ body > header ul > li {
     align-items: center;
 }
 
-body > header ul > li:nth-child(even) a {
+body>header ul>li:nth-child(even) a {
     margin-top: 50px;
 }
 
@@ -36,8 +36,9 @@ body>header li a.bubble {
     transition: border-radius 2s linear;
     box-shadow: inset -6px 6px 10px var(--rtb-color-400), inset 2px 6px 10px var(--rtb-color-400), inset 20px -20px 22px rgba(255, 255, 255, 0.423), inset 40px -40px 44px var(--rtb-color-400);
     padding: var(--rtb-spacing-xl);
+    /*TODO: cambiar box-shadow:  7px 7px 10px #c3c3c3, -7px -7px 10px #fdfdfd; */
 }
 
-body>header ul > li a:not(.bubble) {
+body>header ul>li a:not(.bubble) {
     margin-top: 0px;
 }
