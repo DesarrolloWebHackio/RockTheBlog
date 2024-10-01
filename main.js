@@ -11,16 +11,19 @@ let PREVIOUS_ROUTE = window.location.pathname;
 
 export const changePreviousRoute = (newValue) => {
   console.log(newValue);
-  
+
   PREVIOUS_ROUTE = newValue;
-}
+};
 
 window.addEventListener("popstate", () => {
   console.log(PREVIOUS_ROUTE);
-  
+
   const a = document.querySelector(`a[href="${PREVIOUS_ROUTE}"]`);
-  navLinkAnimationOut(a, () => {
-    routes.find((route) => route.path === window.location.pathname).page();
+  const route = routes.find((route) => route.path === window.location.pathname);
+  console.log(route);
+
+  navLinkAnimationOut(a, route, () => {
+    route.page();
   });
 });
 
