@@ -1,3 +1,4 @@
+import { askColorScheme } from "../../utils/functions/askColorScheme";
 import "./ChangeTheme.css";
 
 export const ChangeTheme = () => {
@@ -5,6 +6,11 @@ export const ChangeTheme = () => {
   const button = document.createElement("button");
 
   div.classList.add("change-theme");
+
+  if (askColorScheme() === "light") {
+    div.classList.add("theme-light");
+  }
+
   button.addEventListener("click", () => toggleTheme(div));
   
   div.append(button);
@@ -16,7 +22,9 @@ const toggleTheme = (div) => {
 
   if (document.body.dataset.theme === "dark") {
     document.body.setAttribute("data-theme", "light");
+    localStorage.setItem("scheme", "light");
   } else {
     document.body.setAttribute("data-theme", "dark");
+    localStorage.setItem("scheme", "dark");
   }
 };
