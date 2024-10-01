@@ -6,38 +6,60 @@ body>header a {
     align-items: center;
 }
 
-body > header ul {
-    position: absolute;
+body>header ul {
+    position: fixed;
     width: 100%;
+    min-height: 100svh;
     display: flex;
     justify-content: space-around;
     padding: var(--rtb-spacing-xl);
     margin-right: 200px;
 }
 
-body > header ul > li {
-    width: 200px;
-    height: 200px;
+body>header ul>li {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body > header ul > li:nth-child(even) a {
-    margin-top: 50px;
-}
-
 body>header li a.bubble {
+    position: absolute;
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: border-radius 2s linear;
-    box-shadow: inset -6px 6px 10px var(--rtb-color-400), inset 2px 6px 10px var(--rtb-color-400), inset 20px -20px 22px rgba(255, 255, 255, 0.423), inset 40px -40px 44px var(--rtb-color-400);
+    box-shadow: inset -6px 6px 10px rgba(0, 0, 0, 0.3),
+        inset 2px 6px 10px rgba(0, 0, 0, 0.2),
+        inset 20px -20px 22px rgba(255, 255, 255, 0.4),
+        inset 40px -40px 44px rgba(0, 0, 0, 0.15);
     padding: var(--rtb-spacing-xl);
 }
 
-body>header ul > li a:not(.bubble) {
-    margin-top: 0px;
+body>header li:nth-child(1) a.bubble {
+    top: 20px;
+    left: 50px;
+}
+
+body>header li:nth-child(2) a.bubble {
+    top: 200px;
+    right: 70px;
+}
+
+body>header li:nth-child(3) a.bubble {
+    bottom: 100px;
+    left: 200px;
+}
+
+body>header li:nth-child(4) a.bubble {
+    top: 40%;
+    left: 30%;
+}
+
+@media (min-width: 700px) {
+    body>header li a.bubble {
+        width: 200px;
+        height: 200px;
+    }
 }
