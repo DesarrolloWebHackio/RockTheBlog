@@ -1,0 +1,35 @@
+.change-theme {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 10px;
+    border-radius: 50px;
+    border: 2px var(--rtb-color-100) solid;
+    padding: var(--rtb-spacing-xs);
+    top: 10px;
+    right: 10px;
+}
+
+.change-theme.theme-light {
+    border-color: var(--rtb-color-600);
+}
+
+.change-theme > button:first-child {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color:var(--rtb-color-100);
+}
+
+.change-theme.theme-light button {
+    transform: translateX(35px);
+}
+
+.change-theme.theme-light button {
+   background-color:var(--rtb-color-600);
+}
