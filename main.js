@@ -2,30 +2,17 @@ import { ChangeTheme } from "./src/components/ChangeTheme/ChangeTheme";
 import { Header } from "./src/components/Header/Header";
 import { routes } from "./src/utils/data/routes";
 import "./style.css";
-import { navLinkAnimationOut } from "./src/utils/animations/navLinkOut";
 import { Home } from "./src/pages/Home/Home";
+import { BurgerMenu } from "./src/components/BurgerMenu/BurgerMenu";
+import { searchAndExecutePage } from "./src/utils/functions/searchAndExecutePage";
 
-document.body.append(ChangeTheme());
-
-let PREVIOUS_ROUTE = window.location.pathname;
-
-export const changePreviousRoute = (newValue) => {
-  console.log(newValue);
-
-  PREVIOUS_ROUTE = newValue;
-};
+document.body.append(ChangeTheme(), BurgerMenu());
 
 window.addEventListener("popstate", () => {
-  console.log(PREVIOUS_ROUTE);
-
-  const a = document.querySelector(`a[href="${PREVIOUS_ROUTE}"]`);
-  const route = routes.find((route) => route.path === window.location.pathname);
-  console.log(route);
-
-  navLinkAnimationOut(a, route, () => {
-    route.page();
-  });
+  searchAndExecutePage();
 });
 
 Header();
 Home();
+
+searchAndExecutePage();
