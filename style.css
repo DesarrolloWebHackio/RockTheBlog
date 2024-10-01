@@ -33,7 +33,7 @@
   /* fonts */
   --rtb-title-font: "Montserrat", sans-serif;
   --rtb-subtitle-font: "Josefin Slab", serif;
-  --rtb-text-font:  "Hind Madurai", sans-serif;
+  --rtb-text-font: "Hind Madurai", sans-serif;
 }
 
 * {
@@ -44,15 +44,24 @@
   box-sizing: border-box;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--rtb-title-font);
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--rtb-subtitle-font);
 }
 
-p, label, a, input, li, textarea {
+p,
+label,
+a,
+input,
+li,
+textarea {
   font-family: var(--rtb-text-font);
 }
 
@@ -60,7 +69,8 @@ body {
   min-height: 100svh;
 }
 
-body[data-theme="dark"] *, body[data-theme="dark"] {
+body[data-theme="dark"] *,
+body[data-theme="dark"] {
   background-color: var(--rtb-bg-dark);
   color: var(--rtb-text-dark);
   transition: all 0.5s;
@@ -71,7 +81,8 @@ body[data-theme="dark"] .contrast {
   color: var(--rtb-text-contrast-dark);
 }
 
-body[data-theme="light"] *, body[data-theme="light"] {
+body[data-theme="light"] *,
+body[data-theme="light"] {
   background-color: var(--rtb-bg-light);
   color: var(--rtb-text-light);
   transition: all 0.5s;
@@ -85,4 +96,18 @@ body[data-theme="light"] .contrast {
 
 #app {
   padding: var(--rtb-spacing-m);
+}
+
+
+a {
+  display: inline-block;
+}
+
+#app>section {
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
