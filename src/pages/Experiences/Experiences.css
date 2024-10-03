@@ -1,2 +1,3 @@
-/* #experiences {
-} */
+#experiences {
+    flex-direction: column;
+}

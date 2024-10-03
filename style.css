@@ -104,7 +104,7 @@ a {
 }
 
 #app>section {
-  padding-top: 250px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
