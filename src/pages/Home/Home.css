@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 
-div.img_wrp {
+div.img_wrp.contrast {
     width: 300px;
     height: 300px;
     overflow: hidden;
