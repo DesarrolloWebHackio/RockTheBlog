@@ -69,3 +69,31 @@
         right: 125px;
     }    
 }
+
+@media (max-width: 1275px) {
+    .rib:nth-child(even) {
+        left: auto;
+    }
+    .rib:nth-child(odd) {
+        right: auto;
+    }    
+    .rib:nth-child(odd) hr {
+        align-self: end;
+    }
+    .spine {
+        height: 90%;
+    }
+}
+
+@media (max-width: 675px) {
+    .timeLine {
+        align-items: end;
+        padding: var(--rtb-spacing-m);
+    }
+    .rib:nth-child(even) hr {
+        align-self: end;
+    }
+    .spine {
+        height: 100%;
+    }
+}
