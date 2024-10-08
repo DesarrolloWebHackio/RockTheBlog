@@ -1,0 +1,52 @@
+.timeLine {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.spine {
+    width: 5px;
+    border-radius: 5px;
+    height: 100svh;
+    border: none;
+    position: absolute;
+    top: 0;
+}
+
+.rib {
+    position: relative;
+    width: 20%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rib:nth-child(even) {
+    left: 10%;
+}
+
+.rib:nth-child(odd) {
+    right: 10%;
+}
+
+.rib hr {
+    height: 5px;
+    border: none;
+    width: 100%;
+}
+
+@media (max-width: 1275px) {
+    .rib:nth-child(even) {
+        left: 125px;
+    }
+    
+    .rib:nth-child(odd) {
+        right: 125px;
+    }    
+}
