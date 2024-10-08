@@ -16,6 +16,7 @@ body>header ul {
     margin-right: 200px;
     overflow: hidden;
     transition: all 0.5s;
+    z-index: 2;
 }
 
 body>header ul.closed {
@@ -69,5 +70,17 @@ body>header li:nth-child(4) a.bubble {
     body>header li a.bubble {
         width: 200px;
         height: 200px;
+    }
+}
+
+@media (max-height: 880px) {
+    body>header li:nth-child(3) a.bubble {
+        bottom: 50px;
+        right: 20px;
+    }
+    body>header li:nth-child(4) a.bubble {
+        bottom: 20px;
+        top: auto;
+        left: 20px;
     }
 }

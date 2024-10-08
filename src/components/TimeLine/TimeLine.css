@@ -1,0 +1,99 @@
+.timeLine {
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.spine {
+    width: 5px;
+    border-radius: 5px;
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+}
+
+.rib {
+    position: relative;
+    width: 40%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rib:nth-child(even) {
+    left: 20%;
+}
+
+.rib:nth-child(odd) {
+    right: 20%;
+}
+
+.rib:nth-child(even) hr {
+    align-self: start;
+}
+
+.rib:nth-child(odd) hr {
+    align-self: end;
+}
+
+.rib:nth-child(even) > p {
+    align-self: start;
+    margin-left: var(--rtb-spacing-m);
+}
+
+.rib:nth-child(odd) > p {
+    align-self: end;
+    margin-right: var(--rtb-spacing-m);
+}
+
+.rib hr {
+    height: 5px;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+}
+
+@media (max-width: 1275px) {
+    .rib:nth-child(even) {
+        left: 125px;
+    }
+    
+    .rib:nth-child(odd) {
+        right: 125px;
+    }    
+}
+
+@media (max-width: 1275px) {
+    .rib:nth-child(even) {
+        left: auto;
+    }
+    .rib:nth-child(odd) {
+        right: auto;
+    }    
+    .rib:nth-child(odd) hr {
+        align-self: end;
+    }
+    .spine {
+        height: 90%;
+    }
+}
+
+@media (max-width: 675px) {
+    .timeLine {
+        align-items: end;
+        padding: var(--rtb-spacing-m);
+    }
+    .rib:nth-child(even) hr {
+        align-self: end;
+    }
+    .spine {
+        height: 100%;
+    }
+}

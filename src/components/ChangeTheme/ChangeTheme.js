@@ -12,12 +12,16 @@ export const ChangeTheme = () => {
   }
 
   button.addEventListener("click", () => toggleTheme(div));
-  
+
   div.append(button);
   return div;
 };
 
-const toggleTheme = (div) => {
+export const toggleTheme = (div) => {
+  if (!div) {
+    div = document.querySelector(".change-theme");
+  }
+  
   div.classList.toggle("theme-light");
 
   if (document.body.dataset.theme === "dark") {

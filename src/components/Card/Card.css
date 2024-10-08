@@ -1,0 +1,110 @@
+.rib:nth-child(odd)>.studiesCard .img_wrp {
+    width: auto;
+    height: auto;
+    min-width: auto;
+    min-height: auto;
+    border-radius: 0px;
+    overflow: hidden;
+    order: 1;
+}
+
+.rib:nth-child(odd)>.studiesCard .info_detail h3 {
+    text-align: end;
+}
+
+.rib:nth-child(odd)>.studiesCard>div>div:last-child p {
+    text-align: end;
+}
+
+.rib:nth-child(odd)>.studiesCard>p {
+    text-align: end;
+}
+
+.rib:nth-child(odd)>.studiesCard>div:last-child {
+    justify-content: end;
+}
+
+.rib:nth-child(odd)>.studiesCard>div>div:first-child>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rib:nth-child(odd)>.studiesCard>div>div:first-child {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.rib:nth-child(odd)>.studiesCard>div {
+    justify-content: end;
+}
+
+.studiesCard {
+    padding: var(--rtb-spacing-l);
+    align-self: end;
+    margin: var(--rtb-spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtb-spacing-m);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.studiesCard>div>div:first-child {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.studiesCard>div:first-child {
+    display: flex;
+    gap: var(--rtb-spacing-m);
+    align-items: center;
+}
+
+.studiesCard>div:first-child>div:last-child {
+    display: flex;
+    gap: var(--rtb-spacing-s);
+    flex-direction: column;
+}
+
+.studiesCard h3 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.studiesCard>div:first-child p {
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+.studiesCard>div>div:first-child>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.studiesCard>div>img {
+    width: 30px;
+}
+
+.studiesCard>div:last-child {
+    display: flex;
+    align-items: center;
+    gap: var(--rtb-spacing-m);
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .studiesCard {
+        width: 300px;
+    }
+}

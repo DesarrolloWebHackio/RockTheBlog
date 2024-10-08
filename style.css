@@ -67,6 +67,7 @@ textarea {
 
 body {
   min-height: 100svh;
+  overflow-x: hidden;
 }
 
 body[data-theme="dark"] *,
@@ -79,6 +80,7 @@ body[data-theme="dark"] {
 body[data-theme="dark"] .contrast {
   background-color: var(--rtb-bg-contrast-dark);
   color: var(--rtb-text-contrast-dark);
+  border-color: var(--rtb-text-contrast-light);
 }
 
 body[data-theme="light"] *,
@@ -91,6 +93,7 @@ body[data-theme="light"] {
 body[data-theme="light"] .contrast {
   background-color: var(--rtb-bg-contrast-light);
   color: var(--rtb-text-contrast-light);
+  border-color: var(--rtb-text-contrast-dark);
 }
 
 
@@ -104,7 +107,7 @@ a {
 }
 
 #app>section {
-  padding-top: 250px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

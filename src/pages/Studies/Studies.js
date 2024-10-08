@@ -1,7 +1,11 @@
+import { Card } from "../../components/Card/Card";
+import { TimeLine } from "../../components/TimeLine/TimeLine";
+import { studies } from "../../utils/data/studies";
 import { openPage } from "../../utils/functions/openPage";
 import "./Studies.css";
 
 export const Studies = () => {
-    openPage("studies");
+    const section = openPage("studies", "ESTUDIOS");
     
+    section.append(TimeLine(studies, Card));
 }

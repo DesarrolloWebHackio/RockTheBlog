@@ -8,6 +8,7 @@
     justify-content: space-between;
     flex-direction: column;
     cursor: pointer;
+    z-index: 3;
 }
 
 .burger_menu:hover {
