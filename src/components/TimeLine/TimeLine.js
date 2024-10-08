@@ -1,6 +1,6 @@
 import "./TimeLine.css";
 
-export const TimeLine = (array) => {
+export const TimeLine = (array, Component) => {
   const arraySorted = array.toSorted(
     (a, b) => parseInt(b.date.slice(0, 4)) - parseInt(a.date.slice(0, 4))
   );
@@ -19,7 +19,7 @@ export const TimeLine = (array) => {
     const text = document.createElement("p");
     text.textContent = element.date;
 
-    rib.append(text, hr);
+    rib.append(text, hr, Component(element));
     timeLine.append(rib);
   }
 

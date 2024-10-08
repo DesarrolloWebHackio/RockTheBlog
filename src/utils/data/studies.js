@@ -25,10 +25,6 @@ export const studies = [
         name: "Node.js",
       },
       {
-        icon: "/assets/icons/docker.png",
-        name: "Docker",
-      },
-      {
         icon: "/assets/icons/git.png",
         name: "Git",
       },
@@ -52,10 +48,6 @@ export const studies = [
         name: "JavaScript",
       },
       {
-        icon: "/assets/icons/docker.png",
-        name: "Docker",
-      },
-      {
         icon: "/assets/icons/git.png",
         name: "Git",
       },
@@ -73,10 +65,6 @@ export const studies = [
       {
         icon: "/assets/icons/python.png",
         name: "Python",
-      },
-      {
-        icon: "/assets/icons/docker.png",
-        name: "Docker",
       },
       {
         icon: "/assets/icons/git.png",
@@ -131,10 +119,6 @@ export const studies = [
       {
         icon: "/assets/icons/nodejs.webp",
         name: "Node.js",
-      },
-      {
-        icon: "/assets/icons/docker.png",
-        name: "Docker",
       },
       {
         icon: "/assets/icons/git.png",
