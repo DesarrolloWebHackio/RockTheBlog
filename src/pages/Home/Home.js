@@ -5,6 +5,8 @@ import { openPage } from "../../utils/functions/openPage";
 import "./Home.css";
 import { toggleTheme } from "../../components/ChangeTheme/ChangeTheme";
 
+export let interval;
+
 export const Home = () => {
   const sectionPage = openPage("home");
 
@@ -75,12 +77,12 @@ const cuboEnorme = () => {
     email.textContent = "Copiado!";
   });
 
-  setInterval(() => {
+  interval = setInterval(() => {
     time--;
     document.querySelector(".time").textContent = `${time} s`;
 
     if (time === 0) {
-      /* window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); */
+      window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }
   }, 1000);
 };

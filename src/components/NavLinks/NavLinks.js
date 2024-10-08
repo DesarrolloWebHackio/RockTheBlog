@@ -2,6 +2,7 @@ import "./NavLinks.css";
 import { routes } from "../../utils/data/routes";
 import { navLinkAnimation } from "../../utils/animations/navLink";
 import { bubble } from "../../utils/animations/bubble";
+import { interval } from "../../pages/Home/Home";
 
 let index = 0;
 
@@ -23,6 +24,8 @@ export const NavLinks = (ul) => {
     }, 2000);
 
     a.addEventListener("click", (e) => {
+      document.querySelector(".cuboEnorme")?.remove();
+      clearInterval(interval);
       e.preventDefault();
       const links = document.querySelectorAll("a.navlink");
       links.forEach((link) => link.classList.add("bubble"));
