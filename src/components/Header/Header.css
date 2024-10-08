@@ -72,3 +72,15 @@ body>header li:nth-child(4) a.bubble {
         height: 200px;
     }
 }
+
+@media (max-height: 880px) {
+    body>header li:nth-child(3) a.bubble {
+        bottom: 50px;
+        right: 20px;
+    }
+    body>header li:nth-child(4) a.bubble {
+        bottom: 20px;
+        top: auto;
+        left: 20px;
+    }
+}

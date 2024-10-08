@@ -1,22 +1,22 @@
-import "./StudiesCard.css";
+import "./Card.css";
 
-export const StudiesCard = (study) => {
+export const Card = (element) => {
   const article = document.createElement("article");
   article.classList.add("studiesCard", "contrast");
 
   article.innerHTML = `
         <div class="contrast info">
             <div class="img_wrp">
-                <img src="${study.schoolImg}" alt="${study.school}"/>
+                <img src="${element.img}" alt="${element.entity}"/>
             </div>
             <div class="contrast info_detail">
-                <h3 class="contrast">${study.school}</h3>
-                <p class="contrast">${study.title}</p>
+                <h3 class="contrast">${element.entity}</h3>
+                <p class="contrast">${element.title}</p>
             </div>
         </div>
-        <p class="contrast description">${study.description}</p>
+        <p class="contrast description">${element.description}</p>
         <div class="contrast technologies">
-            ${study.technologies.map(
+            ${element.technologies.map(
               (tech) => `<img src="${tech.icon}" alt="${tech.name}" class="contrast"/>`
             ).join("")}
         </div>

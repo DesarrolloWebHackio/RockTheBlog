@@ -1,8 +1,8 @@
 export const studies = [
   {
-    schoolImg:
+    img:
       "https://upload.wikimedia.org/wikipedia/commons/f/f9/Antiguas_Escuelas_Aguirre_%28Madrid%29_10.jpg",
-    school: "Massachusetts Institute of Technology (MIT)",
+    entity: "Massachusetts Institute of Technology (MIT)",
     date: "2018 - 2022",
     title: "Bachelor of Science in Computer Science and Engineering",
     description:
@@ -31,9 +31,9 @@ export const studies = [
     ],
   },
   {
-    schoolImg:
+    img:
       "https://upload.wikimedia.org/wikipedia/commons/f/f9/Antiguas_Escuelas_Aguirre_%28Madrid%29_10.jpg",
-    school: "Stanford University",
+    entity: "Stanford University",
     date: "2016 - 2020",
     title: "Bachelor of Science in Artificial Intelligence",
     description:
@@ -54,9 +54,9 @@ export const studies = [
     ],
   },
   {
-    schoolImg:
+    img:
       "https://upload.wikimedia.org/wikipedia/commons/f/f9/Antiguas_Escuelas_Aguirre_%28Madrid%29_10.jpg",
-    school: "Harvard University",
+    entity: "Harvard University",
     date: "2017 - 2021",
     title: "Master of Science in Data Science",
     description:
@@ -73,9 +73,9 @@ export const studies = [
     ],
   },
   {
-    schoolImg:
+    img:
       "https://upload.wikimedia.org/wikipedia/commons/f/f9/Antiguas_Escuelas_Aguirre_%28Madrid%29_10.jpg",
-    school: "University of California, Berkeley",
+    entity: "University of California, Berkeley",
     date: "2014 - 2018",
     title: "Bachelor of Science in Cybersecurity",
     description:
@@ -96,9 +96,9 @@ export const studies = [
     ],
   },
   {
-    schoolImg:
+    img:
       "https://upload.wikimedia.org/wikipedia/commons/f/f9/Antiguas_Escuelas_Aguirre_%28Madrid%29_10.jpg",
-    school: "University of Cambridge",
+    entity: "University of Cambridge",
     date: "2015 - 2019",
     title: "Bachelor of Science in Information Technology",
     description:
