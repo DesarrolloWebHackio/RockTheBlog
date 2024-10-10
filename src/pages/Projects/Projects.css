@@ -1,3 +1,91 @@
-/* #projects {
-    
-} */
+#projects {
+    flex-wrap: wrap;
+    gap: 200px;
+
+}
+
+.project {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.project::before, .project::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    mix-blend-mode: color-dodge;
+    transition: all 0.33s ease;
+}
+
+.project::before {
+    background-position: 50% 50%;
+    background-size: 300% 300%;
+    background-image: linear-gradient(115deg, transparent 0%, #54a29e 25%, transparent 47%, transparent 53%, #a79d66 75%, transparent 100%);
+    opacity: 0.5;
+    filter: brightness(0.5) contrast(1);
+    z-index: 1;
+}
+
+.project::after {
+    background-image: url(https://assets.codepen.io/13471/sparkles.gif), url(https://assets.codepen.io/13471/holo.png), linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
+    background-position: 50% 50%;
+    background-size: 160%;
+    background-blend-mode: overlay;
+    z-index: 2;
+    filter: brightness(1) contrast(1);
+    transition: all 0.33s ease;
+    mix-blend-mode: color-dodge;
+    opacity: 0.75;
+}
+
+.project > a {
+    position: relative;
+    z-index: 9;
+}
+
+.project > a:hover {
+    transform: scale(1.1);
+}
+
+.project>a:first-child {
+    width: 200px;
+    height: 200px;
+}
+
+.project>a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project *:not(a) {
+    padding: var(--rtb-spacing-m);
+}
+
+.project h3 {
+    font-size: 30px;
+}
+
+.project>a:last-child {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project>a:last-child img {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
