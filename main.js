@@ -5,6 +5,7 @@ import { Home } from "./src/pages/Home/Home";
 import { BurgerMenu } from "./src/components/BurgerMenu/BurgerMenu";
 import { searchAndExecutePage } from "./src/utils/functions/searchAndExecutePage";
 import { askColorScheme } from "./src/utils/functions/askColorScheme";
+import { scrollbarHide } from "./src/utils/functions/scrollbarHide";
 
 document.body.append(ChangeTheme(), BurgerMenu());
 document.body.setAttribute("data-theme", askColorScheme());
@@ -16,3 +17,4 @@ window.addEventListener("popstate", () => {
 Header();
 Home();
 searchAndExecutePage();
+scrollbarHide();

@@ -16,7 +16,7 @@ body>header ul {
     margin-right: 200px;
     overflow: hidden;
     transition: all 0.5s;
-    z-index: 2;
+    z-index: 99;
 }
 
 body>header ul.closed {
